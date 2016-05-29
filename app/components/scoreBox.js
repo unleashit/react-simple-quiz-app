@@ -11,6 +11,4 @@ class scoreBox extends Component {
     }
 }
 
-
-
 export default scoreBox;

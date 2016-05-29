@@ -6,16 +6,15 @@ class Results extends Component {
         var percent = (this.props.score / this.props.questions.length) * 100;
 
         var messages = [
-            {message: "Awesome Job!", score: 80},
-            {message: "Good Job!", score: 70},
-            {message: "Pretty bad", score: 60},
-            {message: "Time to get a different job!", score: 0}
+            {txt: "Awesome Job!", score: 80},
+            {txt: "Good Job!", score: 70},
+            {txt: "Pretty bad", score: 60},
+            {txt: "Time to get a different job!", score: 0}
         ];
 
-        var m = _.find(messages, msg => {
+        var message = _.find(messages, msg => {
             return percent >= msg.score;
-        });
-        var message = m.message;
+        }).txt;
 
         return(
             <div className="well">
@@ -27,7 +26,5 @@ class Results extends Component {
         )
     }
 }
-
-
 
 export default Results;
