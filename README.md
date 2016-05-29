@@ -1,2 +1,2 @@
 # react-search-github-users
-Simple React app that searches Github users and returns their stats a list of recent repos. Uses React, Webpack, Axios and ES6.
+Simple React quiz app that takes a javascript object of multiple choice questions, presents them to the user one at a time, then provides a score and acheivement message at the end. Uses React, Webpack and ES6.
